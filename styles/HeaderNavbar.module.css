@@ -1,0 +1,83 @@
+.headerMenu {
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    /* font-weight: 650; */
+}
+
+.newOption {
+    background: red;
+    color: white;
+    font-size: 12px;
+    display: table;
+    margin-top: -18px;
+    border-radius: 3px;
+    border-bottom-left-radius: 0px;
+}
+
+@media (max-width: 1600px) {
+    .ListYourPlaceBtn {
+        display: none;
+    }
+}
+
+@media (max-width: 1450px) {
+    .ActivitiesOptions {
+        display: none;
+    }
+}
+
+@media (max-width: 1360px) {
+    .FlagImg {
+        display: none;
+    }
+
+    .RsText {
+        display: none;
+    }
+}
+
+@media (max-width: 1240px) {
+    .SignInBtn {
+        display: none;
+    }
+}
+
+@media (max-width: 1140px) {
+    .CreateAccountBtn {
+        display: none;
+    }
+}
+
+@media (max-width: 970px) {
+    .AirportsTransferOptions {
+        display: none;
+    }
+}
+
+@media (max-width: 840px) {
+    .CouponsAndDealsOptions {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .FlightsOptions {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .OtherOptions {
+        display: none;
+    }
+
+    .ShoppingCartBtnOption {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+.hideAfterSMScrn{display: none;}
+}

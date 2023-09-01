@@ -1,0 +1,13 @@
+.imgContainer {
+    position: relative;
+}
+
+.contentPosition {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background: #5392F9;
+    color: white;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+}

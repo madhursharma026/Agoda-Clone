@@ -1,0 +1,25 @@
+@media (min-width: 1200px) {
+.topSectionContainer{
+    max-width: 1200px;
+    margin: auto;
+}
+}
+    @media (max-width: 1200px) {
+    .col6 {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .col5 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .col2 {
+        display: none;
+    }
+}
+
+
