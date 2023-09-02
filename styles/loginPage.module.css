@@ -1,0 +1,53 @@
+.loginPageContainer {
+    background: #F9F9F9;
+}
+
+.cardWidth {
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.activeTab {
+    color: #0D6EFD;
+    border-bottom: 2px solid #0D6EFD;
+    cursor: pointer;
+}
+
+.unActiveTab {
+    color: black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.backgroundHR {
+    text-align: center;
+}
+
+.backgroundHR {
+    position: relative;
+    z-index: 1;
+}
+
+.backgroundHR:before {
+    border-top: 1px solid #dfdfdf;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1
+}
+
+.hrContent {
+    background: #fff;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+@media (min-width: 567px) {
+    .cardWidth {
+        max-width: 500px;
+        margin: auto;
+    }
+}

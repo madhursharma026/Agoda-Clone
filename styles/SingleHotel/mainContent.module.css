@@ -1,0 +1,14 @@
+.someOptions {
+    display: inline;
+}
+
+.someOptions:hover {
+    border-bottom: 2px solid #0B5ED7;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .someOptionContainer {
+        display: none;
+    }
+}

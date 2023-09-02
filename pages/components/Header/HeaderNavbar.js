@@ -34,8 +34,8 @@ function HeaderNavbar() {
                     <button type="button" class={`btn btn-outline-danger mx-3 ${styles.ListYourPlaceBtn}`}>List You Place</button>
                     <img className={`mx-3 ${styles.FlagImg}`} src="https://cdn6.agoda.net/images/mobile/flag-us@2x.png" alt="#ImgNotFound" width='30px' />
                     <h6 className={`mx-3 ${styles.RsText}`}>Rs.</h6>
-                    <button type="button" class={`btn btn-outline-primary mx-3 ${styles.SignInBtn}`}>Sign In</button>
-                    <button type="button" class={`btn btn-outline-primary mx-3 ${styles.CreateAccountBtn}`}>Create Account</button>
+                    <Link href='/loginPage' type="button" class={`btn btn-outline-primary mx-3 ${styles.SignInBtn}`}>Sign In</Link>
+                    <Link href='/signUpPage' type="button" class={`btn btn-outline-primary mx-3 ${styles.CreateAccountBtn}`}>Create Account</Link>
                     <i class={`fa fa-shopping-cart mx-3 ${styles.ShoppingCartBtnOption}`} style={{ fontSize: '20px' }}></i>
                     <i class={`fa fa-bars mx-3 ${styles.MenuBarsOption}`} style={{ fontSize: '20px' }}></i>
                 </Navbar.Collapse>
