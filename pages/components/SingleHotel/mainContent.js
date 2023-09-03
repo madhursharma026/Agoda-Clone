@@ -34,10 +34,10 @@ export default function MainContent() {
                 </div>
             </div>
 
-            <div class={`card mt-3 ${styles.someOptionContainer}`}>
+            <div class={`card mt-3`}>
                 <div class="card-body row pb-0">
                     <div className={`col-lg-8 p-0 m-0`}>
-                        <ul style={{ listStyleType: 'none' }}>
+                        <ul className={styles.someOptionContainer} style={{ listStyleType: 'none' }}>
                             <li className={`mx-3 ${styles.someOptions}`} style={{ display: 'inline' }}>Display</li>
                             <li className={`mx-3 ${styles.someOptions}`} style={{ display: 'inline' }}>Room</li>
                             <li className={`mx-3 ${styles.someOptions}`} style={{ display: 'inline' }}>Facilities</li>
@@ -46,8 +46,8 @@ export default function MainContent() {
                             <li className={`mx-3 ${styles.someOptions}`} style={{ display: 'inline' }}>Policies</li>
                         </ul>
                     </div>
-                    <div className={`col-lg-4 p-0 m-0`}>
-                        <h5 style={{ fontSize: '12px' }}>from <span className="text-danger" style={{ fontSize: '18px' }}>Rs. 10,297</span><button type="button" class="btn btn-primary ms-2" style={{ borderRadius: '20px', marginTop: '-10px' }}>VIEW THIS DEAL</button></h5>
+                    <div className={`col-lg-4 p-0 m-0 text-center`}>
+                        <h5 style={{ fontSize: '12px' }}>from <span className="text-danger" style={{ fontSize: '18px' }}>Rs. 10,297</span><button type="button" class="btn btn-primary ms-2" style={{ borderRadius: '20px', marginTop: '-10px' }}>Book Room</button></h5>
                     </div>
                 </div>
             </div>
@@ -92,12 +92,12 @@ export default function MainContent() {
                     <div class="card mt-3">
                         <div class="card-body row">
                             <h5>Facilities</h5>
-                            <div className="col-4"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
-                            <div className="col-4"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
-                            <div className="col-4"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
-                            <div className="col-4"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
-                            <div className="col-4"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
-                            <div className="col-4"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
+                            <div className="col-4"><i class="fa fa-check"></i> Free Wi-Fi</div>
+                            <div className="col-4"><i class="fa fa-check"></i> Free Wi-Fi</div>
+                            <div className="col-4"><i class="fa fa-check"></i> Free Wi-Fi</div>
+                            <div className="col-4"><i class="fa fa-check"></i> Free Wi-Fi</div>
+                            <div className="col-4"><i class="fa fa-check"></i> Free Wi-Fi</div>
+                            <div className="col-4"><i class="fa fa-check"></i> Free Wi-Fi</div>
                         </div>
                     </div>
 
@@ -211,14 +211,14 @@ export default function MainContent() {
             <div className="mt-3">
                 <h5>Select your room</h5>
                 <div className="row">
-                    <div className="col-3 text-primary"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
-                    <div className="col-3 text-primary"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
-                    <div className="col-3 text-primary"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
-                    <div className="col-3 text-primary"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
-                    <div className="col-3 text-primary"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
-                    <div className="col-3 text-primary"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
-                    <div className="col-3 text-primary"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
-                    <div className="col-3 text-primary"><i class="fa fa-check"></i> &nbsp; Free Wi-Fi</div>
+                    <div className="col-3 text-primary"><i class="fa fa-check"></i> Free Wi-Fi</div>
+                    <div className="col-3 text-primary"><i class="fa fa-check"></i> Free Wi-Fi</div>
+                    <div className="col-3 text-primary"><i class="fa fa-check"></i> Free Wi-Fi</div>
+                    <div className="col-3 text-primary"><i class="fa fa-check"></i> Free Wi-Fi</div>
+                    <div className="col-3 text-primary"><i class="fa fa-check"></i> Free Wi-Fi</div>
+                    <div className="col-3 text-primary"><i class="fa fa-check"></i> Free Wi-Fi</div>
+                    <div className="col-3 text-primary"><i class="fa fa-check"></i> Free Wi-Fi</div>
+                    <div className="col-3 text-primary"><i class="fa fa-check"></i> Free Wi-Fi</div>
                 </div>
             </div>
 
