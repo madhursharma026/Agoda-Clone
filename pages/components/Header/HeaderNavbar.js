@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Nav } from 'react-bootstrap';
 import Navbar from 'react-bootstrap/Navbar';
+import Dropdown from 'react-bootstrap/Dropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import styles from '../../../styles/HeaderNavbar.module.css'
 
@@ -37,7 +38,17 @@ function HeaderNavbar() {
                     <Link href='/loginPage' type="button" class={`btn btn-outline-primary mx-3 ${styles.SignInBtn}`}>Sign In</Link>
                     <Link href='/signUpPage' type="button" class={`btn btn-outline-primary mx-3 ${styles.CreateAccountBtn}`}>Create Account</Link>
                     <i class={`fa fa-shopping-cart mx-3 ${styles.ShoppingCartBtnOption}`} style={{ fontSize: '20px' }}></i>
-                    <i class={`fa fa-bars mx-3 ${styles.MenuBarsOption}`} style={{ fontSize: '20px' }}></i>
+                    {/* <i class={`fa fa-bars mx-3 ${styles.MenuBarsOption}`} style={{ fontSize: '20px' }}></i> */}
+                    <Dropdown drop={'start'}>
+                        <Dropdown.Toggle id="dropdown-basic" style={{ background: 'transparent', color: 'black', border: 'none' }}>
+                            <i class={`fa fa-bars ${styles.MenuBarsOption}`} style={{ fontSize: '20px' }}></i>
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu className='mt-5' style={{ marginRight: '-50px' }}>
+                            <Dropdown.Item><Link href='/Profile'>My Profile</Link></Dropdown.Item>
+                            <Dropdown.Item><Link href='/Booking'>My Bookings</Link></Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
                 </Navbar.Collapse>
             </Navbar>
             <Offcanvas show={show} onHide={handleClose}>
@@ -47,25 +58,38 @@ function HeaderNavbar() {
                 <Offcanvas.Body>
                     <ul style={{ listStyleType: 'none' }}>
                         <li className='mt-3'>
-                            <Link href='/FlightAndHotel' style={{textDecoration: 'none', fontSize: '20px'}}>Flight + Hotel</Link>
+                            <Link href='/FlightAndHotel' style={{ textDecoration: 'none', fontSize: '20px' }}>Flight + Hotel</Link>
                         </li>
                         <li className='mt-3'>
-                            <Link href='/' style={{textDecoration: 'none', fontSize: '20px'}}>Hotels & Homes</Link>
+                            <Link href='/' style={{ textDecoration: 'none', fontSize: '20px' }}>Hotels & Homes</Link>
                         </li>
                         <li className='mt-3'>
-                            <Link href='/Flight' style={{textDecoration: 'none', fontSize: '20px'}}>Flights</Link>
+                            <Link href='/Flight' style={{ textDecoration: 'none', fontSize: '20px' }}>Flights</Link>
                         </li>
                         <li className='mt-3'>
-                            <Link href='#' style={{textDecoration: 'none', fontSize: '20px'}}>Coupons & Deals</Link>
+                            <Link href='#' style={{ textDecoration: 'none', fontSize: '20px' }}>Coupons & Deals</Link>
                         </li>
                         <li className='mt-3'>
-                            <Link href='#' style={{textDecoration: 'none', fontSize: '20px'}}>Airport transfer</Link>
+                            <Link href='#' style={{ textDecoration: 'none', fontSize: '20px' }}>Airport transfer</Link>
                         </li>
                         <li className='mt-3'>
-                            <Link href='#' style={{textDecoration: 'none', fontSize: '20px'}}>Activities</Link>
+                            <Link href='#' style={{ textDecoration: 'none', fontSize: '20px' }}>Activities</Link>
                         </li>
                         <li className='mt-3'>
-                            <Link href='#' style={{textDecoration: 'none', fontSize: '20px'}}>Airport transfer</Link>
+                            <Link href='#' style={{ textDecoration: 'none', fontSize: '20px' }}>Airport transfer</Link>
+                        </li>
+                        <li className="mt-3">
+                            <Dropdown>
+                                <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                                    <i className="fa fa-bars"></i>
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
                         </li>
                         <li className='mt-3'>
                             <button type="button" class={`btn btn-outline-danger`}>List You Place</button>
