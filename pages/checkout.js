@@ -1,9 +1,41 @@
 import CheckoutHeader from "./components/Header/CheckoutHeader";
 import styles from '../styles/checkout.module.css';
 import Footer3 from "./components/Footer/Footer3";
+import React, { useState } from 'react';
 
 export default function checkout() {
 
+    const [amount, setamount] = useState('12150.22');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (amount === "") {
+            alert("please enter amount");
+        } else {
+            var options = {
+                key: "rzp_test_kfKJyWMC9YNcEK",
+                key_secret: "LqZFW9yJJ16CsRbdfu0PZxs7",
+                amount: amount * 100,
+                currency: "INR",
+                name: "Agoda Clone Project",
+                Image: 'https://cdn6.agoda.net/images/kite-js/logo/agoda/color-default.svg',
+                description: "for testing purpose",
+                handler: function (response) {
+                    alert('Payment Id: '+ response.razorpay_payment_id);
+                },
+                prefill: {
+                    name: "Your Name",
+                    email: "youremail@gmail.com",
+                    contact: "9876543210"
+                },
+                theme: {
+                    color: "#3399cc"
+                }
+            };
+            var pay = new window.Razorpay(options);
+            pay.open();
+        }
+    }
     return (
         <>
             <CheckoutHeader />
@@ -112,7 +144,7 @@ export default function checkout() {
                                 <div class="card-body px-4">
                                     <p>By proceeding with this booking, I agree to Agoda’s <span className="text-primary">Terms of use</span> and <span className="text-primary">Privacy Policy</span></p>
                                     <p className="text-danger" style={{ textAlign: 'right' }}>Our last 3 rooms at this price</p>
-                                    <button type="button" class="btn btn-primary px-4">NEXT: FINAL STEP</button>
+                                    <button type="button" class="btn btn-primary px-4" onClick={handleSubmit}>NEXT: FINAL STEP</button>
                                     <h6 className="text-success" style={{ textAlign: 'right' }}>You won't be charged yet.</h6>
                                 </div>
                             </div>
